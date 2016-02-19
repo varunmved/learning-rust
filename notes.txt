@@ -1,0 +1,64 @@
+About Rust
+    low memory
+    fast
+    embeddable
+    zero cost abstraction
+        newly allocated objects aren't 
+    rust is embeddle
+        you can use it within other languages
+    rust is safe
+        memory safe
+    built for concurrency
+    
+How fast is it?
+    only 1-3x slower than c
+
+why is it fast?
+    compiled language
+    runs on llvm:
+        small runtime
+    no garbage collection
+    compiler does some auto optimization
+
+embeddable
+    you can use module specific optimizations
+    cross-platform libraries
+    many ruby gems have c extensions, could be written in rust instead
+
+so what..? (why rust > c/c++)
+
+why excited?
+    safety
+    opens web devs to systems programming
+    polyglotism
+    expand your horizons
+    eg diesel
+
+what makes rust safe?
+    statically typed
+    borrowing ssytem
+    lifetimes
+
+rust is strongly typed
+    every resousrce can be described as a predifined type or combination of types without executing the program
+    a resource may only be used in a way that represents taht type in a specific scope
+    violating these rules will result in a compile time error (NOT a runtime error)
+    this means that the compiler will need to infer type or it must be annotated
+
+stack vs heap allocation
+    stack
+        ram
+        LIFO
+        simple for a process to clean up
+        fast
+        managed by rust
+        things will only live as long as their function scope
+    heap
+        unordered
+        fast to write to 
+
+functions
+    fn function_name(param: ParamType)-> return type
+    fn authenticate(&self)->bool{
+        self.password.len() <3
+    }
